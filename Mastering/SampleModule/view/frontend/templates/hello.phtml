@@ -1,0 +1,10 @@
+<?php
+/** @var \Mastering\SmapleModule\Block $block */
+?>
+
+<h1><?php echo $block->getLabel(); ?></h1>
+<?php foreach($block->getItems() as $item): ?>
+<p>
+    <?php echo $item->getName(); ?> : <?php echo $item->getDescription(); ?>
+</p>
+<?php endforeach; ?>

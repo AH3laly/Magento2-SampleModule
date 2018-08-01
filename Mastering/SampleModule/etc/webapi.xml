@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<routes>
+    <route url="/v1/mastering" method="get">
+        <service class="Mastering\SampleModule\Api\ItemRepositoryInterface" method="getList"></service>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

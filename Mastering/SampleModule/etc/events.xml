@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    
+    <!-- Manual Event Dispatching -->
+    <!--
+    <event name="mastering_sample_item_save_after">
+        <observer name="mastering_logger" instance="Mastering\SampleModule\Observer\Logger" />
+    </event>
+    -->
+    
+    <!-- Dynamic Event Dispatching (mastering_sample_item from Model\Item\$_eventPrefix) -->
+    <event name="mastering_sample_item_save_after">
+        <observer name="mastering_logger" instance="Mastering\SampleModule\Observer\Logger" />
+    </event>
+</config>
